@@ -39,13 +39,14 @@
                 Grid.Row="1"
                 Grid.Column="1"
                 IsToggled="false"
+                Toggled="OnConnect"
                 VerticalOptions="Center" />
 
             <Label
                 Grid.Row="2"
                 Grid.ColumnSpan="2"
                 x:Name="label_connection_status"
-                Text="Disconnected"
+                Text="{Binding ConnectionStatus}"
                 VerticalOptions="Center" />
 
             <Label
